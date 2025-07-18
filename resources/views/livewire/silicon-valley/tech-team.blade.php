@@ -7,7 +7,7 @@
             <div class="flex aspect-[1/1] mb-4 rounded-2xl overflow-hidden relative">
                 <div class="absolute -top-20 z-10 animate-[spin_4s_linear_infinite] rounded-full -bottom-20 -start-20 -end-20 bg-gradient-to-r from-yellow-500 via-yellow-800 to-orange-800 "></div>
                 <div class="flex relative z-20 flex-col justify-center items-center gap-2 bg-sv-primary w-full m-2 rounded-2xl">
-                    <img src="{{asset('assets/siliconvalley/techteam/developer.webp')}}" class="h-24" alt="200+ country"/>
+                    <img loading="lazy" decoding="async" src="{{asset('assets/siliconvalley/techteam/developer.webp')}}" class="h-24" alt="200+ country"/>
                     <h3 class="text-3xl font-bold">200+</h3>
                     <span>Pre-Vetted Developers</span>
                 </div>
@@ -15,7 +15,7 @@
             <div class="flex aspect-[1/1] mb-4 rounded-2xl relative overflow-hidden">
                 <div class="absolute -top-20 z-10 animate-[spin_4s_linear_infinite] rounded-full -bottom-20 -start-20 -end-20 bg-gradient-to-r from-blue-400 via-blue-700 to-blue-900"></div>
                 <div class="flex relative z-20 flex-col justify-center items-center gap-2 bg-sv-primary w-full m-2 rounded-2xl">
-                    <img src="{{asset('assets/siliconvalley/techteam/country.webp')}}" class="h-24" alt="200+ country"/>
+                    <img loading="lazy" decoding="async" src="{{asset('assets/siliconvalley/techteam/country.webp')}}" class="h-24" alt="200+ country"/>
                     <h3 class="text-3xl font-bold">30+</h3>
                     <span>Countries</span>
                 </div>
@@ -23,7 +23,7 @@
             <div class="flex aspect-[1/1] mb-4 rounded-2xl relative overflow-hidden">
                 <div class="absolute -top-20 z-10 animate-[spin_4s_linear_infinite] rounded-full -bottom-20 -start-20 -end-20 bg-gradient-to-r from-purple-300 via-purple-500 to-purple-800"></div>
                 <div class="flex relative z-20 flex-col justify-center items-center gap-2 bg-sv-primary w-full m-2 rounded-2xl">
-                    <img src="{{asset('assets/siliconvalley/techteam/developer2.webp')}}" class="h-24" alt="200+ country"/>
+                    <img loading="lazy" decoding="async" src="{{asset('assets/siliconvalley/techteam/developer2.webp')}}" class="h-24" alt="200+ country"/>
                     <h3 class="text-3xl font-bold">200+</h3>
                     <span>Digital Solutions Deployed</span>
                 </div>
