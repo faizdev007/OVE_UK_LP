@@ -53,6 +53,8 @@ jobs:
             **/.env
             **/.gitattributes
             **/.gitignore
+            
+          dangerous-clean-slate: true
 
       - name: 🧹 Cleanup
         run: rm -f .env
