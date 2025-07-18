@@ -140,7 +140,7 @@
         </fieldset>
     @else
     <div class="container py-12 relative md:flex grid flex-1 gap-4 px-4 py-2 sm:px-6 lg:px-8 overflow-hidden mx-auto ">
-        <div class="w-full flex-1 flex gap-6 pt-10 justify-between flex-col mx-auto">
+        <div class="w-full flex-1 flex gap-6 pt-10 justify-between text-center md:text-start flex-col mx-auto">
             <div class="flex flex-col gap-4">
                 <flux:heading class="">
                     <h2 class="xl:text-3xl font-[900] text-white">{{$aiblock_title}}</h2>
