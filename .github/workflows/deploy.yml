@@ -33,6 +33,18 @@ jobs:
       - name: 📦 Install Composer Dependencies
         run: composer install --no-dev --optimize-autoloader
 
+      - name: 📁 Prepare deploy folder with only needed files
+        run: |
+          # Create the parent directories
+          mkdir -p deploy-folder/public/build deploy-folder/public/assets deploy-folder/resources deploy-folder/app deploy-folder/routes
+
+          # Copy the contents of each directory to the deploy-folder
+          cp -r public/assets/* deploy-folder/public/assets/
+          cp -r public/build/* deploy-folder/public/build/
+          cp -r resources/* deploy-folder/resources/
+          cp -r app/* deploy-folder/app/
+          cp -r routes/* deploy-folder/routes/
+
       - name: 🚀 Upload via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -40,8 +52,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_TARGET }}
-          local-dir: ./
-
+          local-dir: ./deploy-folder/
           exclude: |
             **/storage/
             **/public/storage/
@@ -53,7 +64,7 @@ jobs:
             **/.env
             **/.gitattributes
             **/.gitignore
-            
+
           dangerous-clean-slate: true
 
       - name: 🧹 Cleanup
