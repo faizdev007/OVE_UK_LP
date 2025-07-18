@@ -12,7 +12,7 @@
 
 <!-- @vite(['resources/css/app.css', 'resources/js/app.js']) -->
 <link rel="stylesheet" href="{{ asset('build/assets/app-BuKESpL7.css') }}">
-<script src="{{ asset('build/assets/app-l0sNRNKZ.js') }}" defer></script>
+<!-- <script src="{{ asset('build/assets/app-l0sNRNKZ.js') }}" defer></script> -->
 @fluxAppearance
 
 <!-- Google Tag Manager -->
