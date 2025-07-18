@@ -43,14 +43,14 @@ jobs:
           local-dir: ./
 
           exclude: |
-            storage/
-            public/storage/
-            vendor/
-            node_modules/
-            .git/
-            .github/
-            tests/
-            .env
+            **/storage/
+            **/public/storage/
+            **/vendor/
+            **/node_modules/
+            **/.git/
+            **/.github/
+            **/tests/
+            **/.env
 
       - name: 🧹 Cleanup
         run: rm -f .env
