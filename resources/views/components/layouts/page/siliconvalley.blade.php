@@ -22,6 +22,7 @@
     </head>
     <body class="min-h-screen bg-white fira-code -z-10 relative overflow-x-hidden">
         <div 
+            x-cloak
             x-data="{ isSticky: false }" 
             x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 10 })" 
             :class="isSticky 
@@ -30,11 +31,12 @@
             id="headerstick" 
             class="w-full transition-all duration-300 ease-in-out"
         >
-            <div class="relative border-b border-gray-500 p-2 flex-1 gap-2 overflow-hidden mx-auto flex">
+            <div class="relative w-full justify-between border-b border-gray-500 p-2 flex-1 gap-2 overflow-hidden mx-auto flex">
                 <!-- Logo Toggle -->
                 <a href="{{ url()->current() }}" class="flex md:pe-8 items-center space-x-2 rtl:space-x-reverse lg:ms-0" wire:navigate>
                     <!-- Default Logo -->
-                    <img 
+                    <img
+                        x-cloak
                         x-show="!isSticky"
                         fetchpriority="high" decoding="async"
                         src="{{ asset('assets/siliconvalley/logo.webp') }}" 
@@ -44,6 +46,7 @@
                     
                     <!-- Sticky Logo -->
                     <img 
+                        x-cloak
                         x-show="isSticky"
                         fetchpriority="high" decoding="async"
                         src="{{ asset('assets/siliconvalley/logo2.webp') }}" 
@@ -51,10 +54,9 @@
                         class="md:h-12 h-8 w-auto transition-all duration-300 ease-in-out"
                     />
                 </a>
-                <flux:spacer />
-        
+                
                 <div>
-                    <nav :class="isSticky 
+                    <nav x-cloak :class="isSticky 
                         ? 'text-black' 
                         : 'text-white'" class="flex items-center gap-4 h-full relative">
                         <a aria-label="Mailus" href="mailto:enquiry@optimalvirtualemployee.com" :class="isSticky ? 'border-black hover:text-white' : ''" class="border rounded-full p-2 hover:bg-sv-secondary">
