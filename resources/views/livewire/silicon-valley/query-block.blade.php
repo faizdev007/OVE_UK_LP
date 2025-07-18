@@ -28,7 +28,7 @@
                             @endphp
                             @foreach ($devsOptions as $value => $label)
                                 <label class="flex items-center space-x-3">
-                                    <input type="radio" value="{{$value}}" wire:model="requriedpoeple" class="accent-white w-5 h-5" />
+                                    <input type="radio" id="{{$value}}" value="{{$value}}" wire:model="requriedpoeple" class="accent-white w-5 h-5" />
                                     <span class="font-mono text-sm sm:text-base flex-1 text-gray-300">{{$label}}</span>
                                 </label>
                             @endforeach
@@ -65,7 +65,7 @@
                             @endphp
                             @foreach ($devsOptions as $value => $label)
                                 <label class="flex items-center space-x-3">
-                                    <input type="radio" value="{{$value}}" wire:model="requiredwithin" class="accent-white w-5 h-5" />
+                                    <input type="radio" id="{{$value}}" value="{{$value}}" wire:model="requiredwithin" class="accent-white w-5 h-5" />
                                     <span class="font-mono text-sm sm:text-base flex-1 text-gray-300">{{$label}}</span>
                                 </label>
                             @endforeach

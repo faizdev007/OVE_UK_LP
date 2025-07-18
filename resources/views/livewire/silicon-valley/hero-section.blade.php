@@ -1,4 +1,12 @@
-<div class="py-6 border-b border-white bg-sv-gradient text-white herobg">
+<div class="py-6 border-b border-white bg-sv-gradient text-white relative overflow-hidden">
+    <img 
+        src="{{ asset('assets/siliconvalley/herobg.avif') }}" 
+        srcset="{{ asset('assets/siliconvalley/herobg.webp') }} 1x, {{ asset('assets/siliconvalley/herobg.avif') }} 2x" 
+        loading="lazy" 
+        decoding="async" 
+        alt="OVE Hero Background" 
+        class="absolute top-0 h-full object-cover w-full z-0 pointer-events-none select-none"
+    />
     {{-- If your happiness depends on money, you will never be happy with yourself. --}}
     @if(Route::currentRouteName() === 'create_lp_content' || Route::currentRouteName() === 'livewire.update' && auth()->check())
     <fieldset class="container relative text-white max-w-6xl p-4 my-20 rounded mx-auto border-2 border-white">
@@ -118,19 +126,19 @@
             </div>
             <div class="md:w-[40%] w-full flex justify-center items-center relative">
                 <div class="aspect-[1.3/2] rounded-xl p-1 lg:h-3/4 md:h-2/3 md:w-1/2 w-2/3 md:w-auto border-2 border-white relative">
-                    <img loading="lazy" class="aspect-[1.3/2] object-cover rounded-xl h-full absolute top-2 start-2" src="{{asset($heroPortfolio['image'])}}"/>
+                    <img loading="lazy" decoding="async" class="aspect-[1.3/2] object-cover rounded-xl h-full absolute top-2 start-2" src="{{asset($heroPortfolio['image'])}}"/>
                     <div class="w-full h-full relative">
                         <div class="bg-white shadow-md aspect-[1.5/1] 2xl:h-18 h-12 md:h-16 flex justify-center  animate-[bounce_2.7s_ease-in-out_infinite] max-w-auto p-2 rounded absolute top-5 -start-10">
-                            <img loading="lazy" class="h-full object-container" src="{{asset($floatingIcons[0])}}" alt="node.js">
+                            <img loading="lazy" decoding="async" class="h-full object-container" src="{{asset($floatingIcons[0])}}" alt="node.js">
                         </div>
                         <div class="bg-white shadow-md aspect-[1.5/1] 2xl:h-18 h-12 md:h-16 flex justify-center  animate-[bounce_2.3s_ease-in-out_infinite] max-w-auto p-2 rounded absolute -top-5 -end-10">
-                            <img loading="lazy" class="h-full object-container" src="{{asset($floatingIcons[1])}}" alt="python">
+                            <img loading="lazy" decoding="async" class="h-full object-container" src="{{asset($floatingIcons[1])}}" alt="python">
                         </div>
                         <div class="bg-white shadow-md aspect-[1.5/1] 2xl:h-18 h-12 md:h-16 flex justify-center animate-[bounce_3s_ease-in-out_infinite] max-w-auto p-2 rounded absolute bottom-5 -start-10">
-                            <img loading="lazy" class="h-full object-container" src="{{asset($floatingIcons[2])}}" alt="firebase">
+                            <img loading="lazy" decoding="async" class="h-full object-container" src="{{asset($floatingIcons[2])}}" alt="firebase">
                         </div>
                         <div class="bg-white shadow-md aspect-[1.5/1] 2xl:h-18 h-12 md:h-16 flex justify-center animate-[bounce_2s_ease-in-out_infinite] max-w-auto p-2 rounded absolute bottom-20 -end-10">
-                            <img loading="lazy" class="h-full object-container" src="{{asset($floatingIcons[3])}}" alt="react">
+                            <img loading="lazy" decoding="async" class="h-full object-container" src="{{asset($floatingIcons[3])}}" alt="react">
                         </div>
                     </div>
                     <div class="border-e border-b pb-1 pe-1 absolute md:-bottom-6 -bottom-10 md:-end-20 -end-20 rounded-lg border-white">

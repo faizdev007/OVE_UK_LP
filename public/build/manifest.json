@@ -11,14 +11,6 @@
     "file": "assets/azblock-D9xq-coM.webp",
     "src": "public/assets/siliconvalley/azblock.webp"
   },
-  "public/assets/siliconvalley/herobg.avif": {
-    "file": "assets/herobg-wtDP2NCo.avif",
-    "src": "public/assets/siliconvalley/herobg.avif"
-  },
-  "public/assets/siliconvalley/herobg.webp": {
-    "file": "assets/herobg-Dd_mDEwj.webp",
-    "src": "public/assets/siliconvalley/herobg.webp"
-  },
   "public/assets/siliconvalley/hireprocess.avif": {
     "file": "assets/hireprocess-B9znzsKL.avif",
     "src": "public/assets/siliconvalley/hireprocess.avif"
@@ -28,7 +20,7 @@
     "src": "public/assets/siliconvalley/hireprocess.webp"
   },
   "resources/css/app.css": {
-    "file": "assets/app-BUOeffH9.css",
+    "file": "assets/app-BuKESpL7.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
