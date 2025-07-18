@@ -113,7 +113,7 @@
         </div>
         <div class="flex-1 w-full text-white text-center">
             <h2 class="text-3xl mb-4 xl:text-[45px] font-extrabold">{{$formtitle}}</h2>
-            <h4 class="text-lg mb-4 xl:text-[20px]">{{$formsubtitle}}</h4>
+            <h3 class="text-lg mb-4 xl:text-[20px]">{{$formsubtitle}}</h3>
             <x-messagestatus :successMessage="$successMessage" :errorMessage="$errorMessage"></x-messagestatus>
             @if (session()->has('success'))
                 <div 
