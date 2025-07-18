@@ -35,7 +35,8 @@
                 <a href="{{ url()->current() }}" class="flex md:pe-8 items-center space-x-2 rtl:space-x-reverse lg:ms-0" wire:navigate>
                     <!-- Default Logo -->
                     <img 
-                        x-show="!isSticky" 
+                        x-show="!isSticky"
+                        fetchpriority="high" decoding="async"
                         src="{{ asset('assets/siliconvalley/logo.webp') }}" 
                         alt="{{ config('app.name') }}" 
                         class="md:h-14 h-10 w-auto transition-all duration-300 ease-in-out"
@@ -43,7 +44,8 @@
                     
                     <!-- Sticky Logo -->
                     <img 
-                        x-show="isSticky" 
+                        x-show="isSticky"
+                        fetchpriority="high" decoding="async"
                         src="{{ asset('assets/siliconvalley/logo2.webp') }}" 
                         alt="{{ config('app.name') }}" 
                         class="md:h-12 h-8 w-auto transition-all duration-300 ease-in-out"
@@ -62,7 +64,7 @@
                         </a>
                         <div x-data="{ open: false }" class="relative inline-block text-left">
                             <!-- Button -->
-                            <button @click="open = !open" :class="isSticky ? 'border-black hover:text-white' : ''" class="border cursor-pointer rounded-full p-2 hover:bg-sv-secondary">
+                            <button aria-label="Callus" @click="open = !open" :class="isSticky ? 'border-black hover:text-white' : ''" class="border cursor-pointer rounded-full p-2 hover:bg-sv-secondary">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
                                 </svg>
@@ -74,6 +76,7 @@
                                 x-show="open"
                                 @click.away="open = false"
                                 x-transition
+                                aria-hidden="true"
                                 class="fixed mt-3 me-5 right-0 z-30 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                             >
                                 <div class="py-1">

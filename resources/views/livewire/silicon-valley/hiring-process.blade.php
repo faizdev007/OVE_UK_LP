@@ -7,7 +7,7 @@
     <div class="md:block hidden hiringline max-w-5xl mx-auto md:p-8 p-4">
         <div class="relative my-20 text-start flex flex-col md:flex-row justify-end items-end md:justify-between md:items-center h-full text-white">
             <div class="md:w-[30%] relative md:-top-20 mb-6">
-                <img src="{{asset('assets/siliconvalley/hiringproc/what_your_need.webp')}}" alt=""/>
+                <img loading="lazy" decoding="async" src="{{asset('assets/siliconvalley/hiringproc/what_your_need.webp')}}" alt="Tell Us What You Need"/>
                 <h3 class="font-bold"><code><</code> Tell Us What You Need <code>/ ></code></h3>
                 <p class="mb-6 text-sm">Share your tech stack, experience level, and timeline.</p>
                 <flux:modal.trigger name="book-a-call" class="flex text-sv-secondary font-bold  gap-2">
@@ -18,7 +18,7 @@
                 </flux:modal.trigger>
             </div>
             <div class="md:w-[30%] relative md:top-5 md:-start-10 mb-6">
-                <img src="{{asset('assets/siliconvalley/hiringproc/you_choose.webp')}}" alt=""/>
+                <img loading="lazy" decoding="async" src="{{asset('assets/siliconvalley/hiringproc/you_choose.webp')}}" alt="We Curate, You Choose"/>
                 <h3 class="font-bold"><code><</code> We Curate, You Choose <code>/ ></code></h3>
                 <p class="mb-6 text-sm">Browse pre-vetted engineers aligned to your needs.</p>
                 <flux:modal.trigger name="book-a-call" class="flex text-sv-secondary font-bold  gap-2">
@@ -31,7 +31,7 @@
         </div>
         <div class="relative my-20 text-start md:flex justify-between items-center h-full text-white">
             <div class="md:w-[30%] relative md:-top-5 md:start-10 mb-6">
-                <img src="{{asset('assets/siliconvalley/hiringproc/interview_favorites.webp')}}" alt=""/>
+                <img loading="lazy" decoding="async" src="{{asset('assets/siliconvalley/hiringproc/interview_favorites.webp')}}" alt="Interview Your Favorites"/>
                 <h3 class="font-bold"><code><</code> Interview Your Favorites <code>/ ></code></h3>
                 <p class="mb-6 text-sm">Deep-dive into skills, communication, and problem-solving.</p>
                 <flux:modal.trigger name="book-a-call" class="flex text-sv-primary font-bold  gap-2">
@@ -42,7 +42,7 @@
                 </flux:modal.trigger>
             </div>
             <div class="md:w-[30%] relative md:top-20 md:start-10 mb-6">
-                <img src="{{asset('assets/siliconvalley/hiringproc/hire_build.webp')}}" alt=""/>
+                <img loading="lazy" decoding="async" src="{{asset('assets/siliconvalley/hiringproc/hire_build.webp')}}" alt="Hire. Onboard. Build."/>
                 <h3 class="font-bold"><code><</code> Hire. Onboard. Build. <code>/ ></code></h3>
                 <p class="mb-6 text-sm">Start working with your new developer in days.</p>
                 <flux:modal.trigger name="book-a-call" class="flex text-sv-primary font-bold  gap-2">
@@ -57,7 +57,7 @@
     <div class="md:hidden max-w-5xl mx-auto md:p-8 p-4">
         <div class="relative text-center flex flex-col gap-4 justify-between items-center h-full text-white">
             <div class="md:w-68 relative md:-top-20 mb-6">
-                <img src="{{asset('assets/siliconvalley/hiringproc/what_your_need.webp')}}" alt=""/>
+                <img loading="lazy" decoding="async" src="{{asset('assets/siliconvalley/hiringproc/what_your_need.webp')}}" alt="Tell Us What You Need"/>
                 <h3 class="font-bold"><code><</code> Tell Us What You Need <code>/ ></code></h3>
                 <p class="mb-6 text-sm">Share your tech stack, experience level, and timeline.</p>
                 <flux:modal.trigger name="book-a-call" class="flex justify-center text-sv-secondary font-bold  gap-2">
@@ -68,7 +68,7 @@
                 </flux:modal.trigger>
             </div>
             <div class="md:w-68 relative md:top-5 md:-start-30 mb-6">
-                <img src="{{asset('assets/siliconvalley/hiringproc/you_choose.webp')}}" alt=""/>
+                <img loading="lazy" decoding="async" src="{{asset('assets/siliconvalley/hiringproc/you_choose.webp')}}" alt="We Curate, You Choose"/>
                 <h3 class="font-bold"><code><</code> We Curate, You Choose <code>/ ></code></h3>
                 <p class="mb-6 text-sm">Browse pre-vetted engineers aligned to your needs.</p>
                 <flux:modal.trigger name="book-a-call" class="flex justify-center text-sv-secondary font-bold  gap-2">
@@ -79,7 +79,7 @@
                 </flux:modal.trigger>
             </div>
             <div class="md:w-68 relative md:-top-10 md:start-10 mb-6">
-                <img src="{{asset('assets/siliconvalley/hiringproc/interview_favorites.webp')}}" alt=""/>
+                <img loading="lazy" decoding="async" src="{{asset('assets/siliconvalley/hiringproc/interview_favorites.webp')}}" alt="Interview Your Favorites"/>
                 <h3 class="font-bold"><code><</code> Interview Your Favorites <code>/ ></code></h3>
                 <p class="mb-6 text-sm">Deep-dive into skills, communication, and problem-solving.</p>
                 <flux:modal.trigger name="book-a-call" class="flex justify-center text-sv-primary font-bold  gap-2">
@@ -90,7 +90,7 @@
                 </flux:modal.trigger>
             </div>
             <div class="md:w-68 relative md:top-10 mb-6">
-                <img src="{{asset('assets/siliconvalley/hiringproc/hire_build.webp')}}" alt=""/>
+                <img loading="lazy" decoding="async" src="{{asset('assets/siliconvalley/hiringproc/hire_build.webp')}}" alt="Hire. Onboard. Build."/>
                 <h3 class="font-bold"><code><</code> Hire. Onboard. Build. <code>/ ></code></h3>
                 <p class="mb-6 text-sm">Start working with your new developer in days.</p>
                 <flux:modal.trigger name="book-a-call" class="flex justify-center text-sv-primary font-bold  gap-2">
