@@ -3,14 +3,14 @@
     <div class="relative flex md:flex-row flex-col items-center justify-center gap-4 md:space-y-0 space-y-48 md:py-10 px-4 py-2 sm:px-6 lg:px-8 overflow-hidden mx-auto h-full">
         <div class="lg:w-none m-4 md:w-[40%] pb-12 flex md:items-center flex-col gap-6">
             <div class="aspect-[1/1] h-full absolute">
-                <img loading="lazy" decoding="async" src="{{asset('assets/siliconvalley/globe-bg.webp')}}" class="z-0 animate-[spin_4s_linear_infinite] opacity-30 h-full" alt="Silicon Valley Logo"/>
+                <img loading="lazy" decoding="async" src="{{asset('assets/siliconvalley/globe-bg.webp')}}" width="628" height="628" class="z-0 animate-[spin_4s_linear_infinite] opacity-30 h-full" alt="Silicon Valley Logo"/>
             </div>
             <div class="relative rounded-full lg:w-max">
                 <div class="absolute -top-3 bottom-4 z-0 -end-3 start-4  border-2 border-white rounded-full"></div>
                 <div class="absolute inset-0 top-4 -bottom-3 z-0 end-4 -start-3  border-2 border-white rounded-full"></div>
                 <!-- <div class="absolute inset-0 bg-sv-secondary rounded-full"></div> -->
                 <div class="aspect-square xl:w-[400px] xl:h-[400px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden relative z-10">
-                    <img loading="lazy" decoding="async" src="{{asset($devProfile['image'])}}" alt="{{$devProfile['name']}}" class="object-cover w-full h-full"/>
+                    <img loading="lazy" decoding="async" src="{{asset($devProfile['image'])}}" alt="{{$devProfile['name']}}" width="400" height="400" class="object-cover w-full h-full"/>
                 </div>
             </div>
             <div class="z-20 relative flex justify-center">
