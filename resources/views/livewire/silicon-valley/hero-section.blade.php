@@ -1,6 +1,6 @@
 <div class="py-6 border-b border-white bg-sv-gradient text-white relative overflow-hidden">
     <img 
-        src="{{ asset('assets/siliconvalley/herobg.avif') }}" 
+        src="{{ asset('assets/siliconvalley/herobg.webp') }}" 
         srcset="{{ asset('assets/siliconvalley/herobg.webp') }} 1x, {{ asset('assets/siliconvalley/herobg.avif') }} 2x" 
         fetchpriority="high"
         decoding="async"
