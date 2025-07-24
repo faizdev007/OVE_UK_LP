@@ -15,7 +15,7 @@
             </flux:heading>
             <p class="text-white text-xs mb-2">{{$profile['profile']}}</p>
             <p class="text-white mb-1">PREVIOUSLY AT</p>
-            <img loading="eager" fetchpriority="high" decoding="async" class="aspect-[2/1] object-container h-16 mb-2" src="{{ asset($profile['company_logo']) }}" alt="{{$profile['profile']}}"/>
+            <img loading="eager" fetchpriority="high" decoding="async" class="aspect-[2/1] object-container h-12 mb-2" src="{{ asset($profile['company_logo']) }}" alt="{{$profile['profile']}}"/>
             <div class="flex flex-wrap justify-center items-center gap-2">
                 @php
                     $lists = explode(',',$profile['tools']);
