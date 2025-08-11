@@ -44,6 +44,7 @@ jobs:
           cp -r resources/* deploy-folder/resources/
           cp -r app/* deploy-folder/app/
           cp -r routes/* deploy-folder/routes/
+          cp -f .htaccess deploy-folder/.htaccess
 
       - name: 🚀 Upload via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
