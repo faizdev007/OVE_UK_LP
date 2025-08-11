@@ -7,10 +7,6 @@
     RewriteCond %{HTTPS} !=on
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-    # Redirect only if host matches the old domain
-    RewriteCond %{HTTP_HOST} ^(?:www\.)?optimalvirtualemployee\.co.uk$ [NC]
-    RewriteRule ^(.*)$ https://optimalvirtualemployee.com/$1 [R=301,L]
-
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
