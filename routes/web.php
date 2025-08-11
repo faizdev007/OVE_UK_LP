@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Redirect;
 
 // Route::get('/relink-storage', function () {
 //     try {
@@ -52,23 +53,24 @@ Route::get('/lp2', function () {
 })->name('home');
 
 Route::get('/', function () {
-    return view('landing_pages.siliconvalley',[
-        'lp_theme'=>'siliconvalley',
-        'lp_data' =>[],
-        'header'=> [
-            'btntext'=>'Book a 30 mins strategy call',
-            'menu'=>[
-                'Our Talent',
-                'Technical Stack',
-                'Success Stories',
-                'FAQs'
-            ]
-        ],
-        'seo'=>[
-            'metaTitle'=>'SaaS, Web & Mobile Development | eCommerce, UI/UX, API Integration Services - OVE',
-            'metaDescription'=>'Partner with OVE for scalable SaaS solutions, custom web apps, mobile development, UI/UX design, and API integration. Book a free consultation today.',
-        ]
-    ]);
+    return Redirect::to('https://optimalvirtualemployee.com/');
+    // return view('landing_pages.siliconvalley',[
+    //     'lp_theme'=>'siliconvalley',
+    //     'lp_data' =>[],
+    //     'header'=> [
+    //         'btntext'=>'Book a 30 mins strategy call',
+    //         'menu'=>[
+    //             'Our Talent',
+    //             'Technical Stack',
+    //             'Success Stories',
+    //             'FAQs'
+    //         ]
+    //     ],
+    //     'seo'=>[
+    //         'metaTitle'=>'SaaS, Web & Mobile Development | eCommerce, UI/UX, API Integration Services - OVE',
+    //         'metaDescription'=>'Partner with OVE for scalable SaaS solutions, custom web apps, mobile development, UI/UX design, and API integration. Book a free consultation today.',
+    //     ]
+    // ]);
 })->name('home');
 
 Route::get('/thankyou',function(){
