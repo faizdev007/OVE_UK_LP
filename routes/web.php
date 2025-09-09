@@ -46,8 +46,8 @@ Route::get('/lp2', function () {
             ]
         ],
         'seo'=>[
-            'metaTitle'=>'SaaS, Web & Mobile Development | eCommerce, UI/UX, API Integration Services - OVE',
-            'metaDescription'=>'Partner with OVE for scalable SaaS solutions, custom web apps, mobile development, UI/UX design, and API integration. Book a free consultation today.',
+            'metaTitle'=>'Find and Hire Developers for Startups — Optimal Virtual Employee — Top 3% Remote Talent',
+            'metaDescription'=>'Find and hire pre-vetted remote developers from the top 3% global talent pool. Optimal Virtual Employee helps startups build reliable tech teams fast — affordable, flexible & scalable.',
         ]
     ]);
 })->name('home');
@@ -78,15 +78,15 @@ Route::get('/thankyou',function(){
         abort(404, 'Not Found');
     }
     return view('thankyou',['seo'=>[
-            'metaTitle'=>'SaaS, Web & Mobile Development | eCommerce, UI/UX, API Integration Services - OVE',
-            'metaDescription'=>'Partner with OVE for scalable SaaS solutions, custom web apps, mobile development, UI/UX design, and API integration. Book a free consultation today.',
+            'metaTitle'=>'Find and Hire Developers for Startups — Optimal Virtual Employee — Top 3% Remote Talent',
+            'metaDescription'=>'Find and hire pre-vetted remote developers from the top 3% global talent pool. Optimal Virtual Employee helps startups build reliable tech teams fast — affordable, flexible & scalable.',
         ]]);
 })->name('thankyou');
 
 Route::get('/privacy_policy',function(){
     return view('privacy_policy',['seo'=>[
-            'metaTitle'=>'SaaS, Web & Mobile Development | eCommerce, UI/UX, API Integration Services - OVE',
-            'metaDescription'=>'Partner with OVE for scalable SaaS solutions, custom web apps, mobile development, UI/UX design, and API integration. Book a free consultation today.',
+            'metaTitle'=>'Find and Hire Developers for Startups — Optimal Virtual Employee — Top 3% Remote Talent',
+            'metaDescription'=>'Find and hire pre-vetted remote developers from the top 3% global talent pool. Optimal Virtual Employee helps startups build reliable tech teams fast — affordable, flexible & scalable.',
         ]]);
 })->name('privacy_policy');
 
@@ -105,8 +105,8 @@ Route::get('/{lp_data}',function(LandingPage $lp_data){
                 'FAQs'
         ]],
         'seo'=>isset($data['seo']) ? $data['seo'] : [
-            'metaTitle'=>'SaaS, Web & Mobile Development | eCommerce, UI/UX, API Integration Services - OVE',
-            'metaDescription'=>'Partner with OVE for scalable SaaS solutions, custom web apps, mobile development, UI/UX design, and API integration. Book a free consultation today.',
+            'metaTitle'=>'Find and Hire Developers for Startups — Optimal Virtual Employee — Top 3% Remote Talent',
+            'metaDescription'=>'Find and hire pre-vetted remote developers from the top 3% global talent pool. Optimal Virtual Employee helps startups build reliable tech teams fast — affordable, flexible & scalable.',
         ]
     ]);
 })->name('showlandingpage');
