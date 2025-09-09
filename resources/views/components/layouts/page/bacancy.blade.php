@@ -8,7 +8,8 @@
             'Our Talent',
             'Technical Stack',
             'Success Stories',
-            'FAQs'
+            'FAQs',
+            'Pricing'
         ]
     ],
     'modal'=>[
@@ -27,7 +28,7 @@
                     <img src="{{ asset('assets/bacancy/logo.webp') }}" alt="{{ config('app.name') }}" class="md:h-14 h-10 w-auto" />
                 </a>
 
-                <nav class="flex items-center py-3 text-black text-xs xl:text-lg lg:flex hidden font-bold">
+                <nav class="items-center py-3 text-black text-xs xl:text-lg lg:flex hidden font-bold">
                     @foreach($header['menu'] as $key=>$link)
                         <a class="px-3" href="{{'#'.(723+$key)}}">{{$link}}</a>
                     @endforeach
